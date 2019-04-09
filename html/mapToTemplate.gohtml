@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<title>Web Dev with Go</title>
+	</head>
+  <body>
+    <h1>mapToTemplate.gohtml</h1>
+    <!-- data will be passed into here from go file -  -->
+    <ul>
+      {{range $key, $val := .}}
+      <li>{{$key}} - {{$val}}</li>
+      {{end}}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<title>Web Dev with Go</title>
+	</head>
+  <body>
+    <h1>varInTemplate.gohtml</h1>
+    <!-- data will be passed into here from go file - specify name of var coming in to display the passed-in data -->
+    <!-- assign html var to input data { { $ wisdom := . } } then use { { $ wisdom } } in html lines-->
+    {{$wisdom := .}}
+    <h3>The meaning of life : {{$wisdom}}</h3>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<title>Web Dev with Go</title>
+	</head>
+  <body>
+    <h1>structToTemplate.gohtml</h1>
+    <!-- slice will be passed into here from go file -  -->
+    <ul>
+      <li>{{.Name}} - {{.Motto}}</li>
+    </ul>
+    <br />
+    as well as this way
+    {{$x := .Name}}
+    {{$y := .Motto}}
+    <li>{{$x}} - {{$y}}</li>
+  </body>
+</html>
