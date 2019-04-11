@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<title>Pass Fcns To Tpl</title>
+	</head>
+  <body>
+    <h1>passFcnsToTemplate.gohtml</h1>
+    <!-- data & functions will be passed into here from go file -  -->
+    <h4>uc fcn used here, changes Name to uppercase</h4><br />
+    {{range .Wisdom}}
+    {{uc .Name}}
+    {{end}}
+    <br /><h4>ft fcn used here, only uses 1st 3 chars of each string field</h4><br />
+    {{range .Wisdom}}
+    {{ft .Name}}
+    {{end}}
+
+    <br /><h4>ft fcn used here, only uses 1st 3 chars of each string field</h4><br />
+    {{range .Transport}}
+    {{ft .Manufacturer}} - {{ft .Model}} - {{.Doors}}</li>
+    {{end}}
+
+  </body>
+</html>

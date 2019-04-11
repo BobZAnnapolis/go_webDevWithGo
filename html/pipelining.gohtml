@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<title>pipelining</title>
+	</head>
+  <body>
+    <h1>pipelining.gohtml</h1>
+    <!-- data & functions will be passed into here from go file -  -->
+    <h4>pipelining take passed in data and pipe into fdbl</h4><br />
+    passed in value {{.}}<br />
+    pipelined into double {{. | fdbl}}<br />
+
+    pipelined into double then square {{. | fdbl | fsq}}<br />
+
+    pipelined into double then square then square root {{. | fdbl | fsq | fsqrt}}
+
+  </body>
+</html>
