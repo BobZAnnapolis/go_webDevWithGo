@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<title>Web Dev with Go</title>
+	</head>
+  <body>
+    <h1>arrayStructsToTemplate.gohtml</h1>
+    <!-- data will be passed into here from go file -  -->
+    EXAMPLE 1 - print all user fields, range over each
+    {{range .}}
+      {{.}}
+    {{end}}
+
+    EXAMPLE 2 - if there is data, then print data struct
+    {{if .}}
+      EXAMPLE 2 - {{.}}
+    {{end}}
+
+    EXAMPLE 3 - if there is data, and if the struct has a name, then print the name, only 1st 2 have names
+    {{range .}}
+      {{if .Name}}
+        Example 3 - only print entries with a Name {{.Name}}
+      {{end}}
+    {{end}}
+
+    EXAMPLE 4 - if there is data, and if the struct has a name, and Admin = true, then print the name, only 1
+    {{range .}}
+      {{if and .Name .Admin}}
+        Example 4 - only print entries with a Name and Admin = true {{.Name}}
+      {{end}}
+    {{end}}
+
+  </body>
+</html>

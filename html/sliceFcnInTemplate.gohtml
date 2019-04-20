@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<title>Web Dev with Go</title>
+	</head>
+  <body>
+    <h1>sliceFcnInTemplate.gohtml</h1>
+    <!-- data will be passed into here from go file -  -->
+    <br />
+    Outputting { { index . # } }, where x is 2, 0, 1 on passed in slice
+    {{index . 2}}
+    {{index . 0}}
+    {{index . 1}}
+
+    <br />
+    slice values are : <br />
+    {{.}}
+
+    <!--
+    index
+    a fcn you can use in a template
+    it is a pre-defined global function
+
+    Index returns the result of indexing its 1st argument by the
+    following arguments. Thus "index x 1 2 3" is, in Go syntax,
+    x[1][2][3]. Each indexed item must be a map, slice, or array.
+
+    -->
+  </body>
+</html>

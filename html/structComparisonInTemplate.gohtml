@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<title>Web Dev with Go</title>
+	</head>
+  <body>
+    <h1>structComparisonInTemplate.gohtml</h1>
+    <!-- data will be passed into here from go file -  -->
+    <br />
+    input struct values are : <br />
+    {{.}}
+
+    Example 1 - print if 1 gt greater than 2
+    {{if gt .Score1 .Score2}}
+      SCORE1 > SCORE2
+    {{end}}
+
+    Example 2 - print if 1 lt less than 2
+    {{if lt .Score1 .Score2}}
+      SCORE1 < SCORE2
+    {{end}}
+
+    Example 3 - print if 1 eq equal 2
+    {{if eq .Score1 .Score2}}
+      SCORE1 = SCORE2
+    {{end}}
+
+    Example 4 - print if 1 lt less than val = 10
+    {{if lt .Score1 10}}
+      SCORE1 < 10
+    {{end}}
+
+  </body>
+</html>
