@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Println("\nfrom the command line, direct output to an HTML file - then open in a browser\n")
+	fmt.Println("\nfrom the command line, re-direct output to an HTML file - then open in a browser\n")
 
 	myName := "Bob Zee"
 

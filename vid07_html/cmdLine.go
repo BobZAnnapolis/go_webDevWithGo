@@ -9,6 +9,9 @@ import (
 )
 
 func main() {
+
+	fmt.Println("\nuse cmd line - 1st parm is a filename, 2nd parm is 1 word to move into a newly created html, open new file in a browser")
+
 	fname := os.Args[1]
 	ftext := os.Args[2]
 
@@ -37,6 +40,6 @@ func main() {
 
 	io.Copy(nf, strings.NewReader(tpl))
 
-	fmt.Printf("\nuse cmd line - 1st parm gets filename, 2nd parm gets 1 word to move into created file, create file, write string into it - open new file in a browser %s\n", fname)
+	fmt.Printf("\nopen new file %s in a browser\n", fname)
 
 }

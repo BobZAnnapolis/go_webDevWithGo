@@ -28,6 +28,12 @@ func main() {
 		log.Fatalln(err)
 	}
 
+	fmt.Println("\nwrite just glob2 to the screen\n")
+	err = tpl.ExecuteTemplate(os.Stdout, "glob2.gohtml", nil)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
 	fmt.Println("\nwrite out the FIRST ONE IT FINDS to the screen\n")
 	err = tpl.Execute(os.Stdout, nil)
 	if err != nil {

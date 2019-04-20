@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>vid16</title>
+  </head>
+  <body>
+    <h1>vid 16 Passing Data Into Templates</h1>
+    <h2>dblZero.gohtml</h2>
+
+    Input structure is : {{.}}
+
+    <h3>{{.Name}}</h3>
+    <h3>{{.Age}}</h3>
+    {{if .LicenseToKill}}
+      <h4>License To Kill</h4>
+    {{else}}
+      <h5>no license to kill</h5>
+    {{end}}
+
+  </body>
+</html>

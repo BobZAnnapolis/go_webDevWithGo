@@ -14,7 +14,7 @@ func init() {
 }
 func main() {
 
-	fmt.Println("\nread ALL globs from folder, pass data {ie 42} to meaningOfLife file, output combined template & data to screen\n")
+	fmt.Println("\nread ALL globs from folder, pass string into varInTemplate file, output combined template & data to screen\n")
 
 	err := tpl.ExecuteTemplate(os.Stdout, "varInTemplate.gohtml", "Release self-focus; embrace other-focus")
 	if err != nil {
